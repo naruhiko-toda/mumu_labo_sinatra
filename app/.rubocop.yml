@@ -1,1 +1,4 @@
-inherit_from: .rubocop_inherit.yml
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
