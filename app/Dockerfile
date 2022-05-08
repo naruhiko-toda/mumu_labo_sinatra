@@ -8,4 +8,4 @@ COPY Gemfile.lock ./
 RUN bundle config --local set path 'vendor/bundle'
 RUN bundle install
 
-CMD ["ruby", "app.rb"]
+CMD ["rackup", "config.ru", "-p", "4567",  "-o", "0.0.0.0"]
