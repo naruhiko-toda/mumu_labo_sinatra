@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'sinatra'
 require 'sinatra/reloader'
 
@@ -6,6 +8,6 @@ set :bind, '0.0.0.0'
 class App < Sinatra::Base
   register Sinatra::Reloader
   get '/' do
-    "hello anna!!!"
+    'hello anna!!!'
   end
 end
